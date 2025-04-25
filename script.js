@@ -8,8 +8,8 @@ const celebrateBtn = document.getElementById("celebrate-btn");
 const birthdayAudio = document.getElementById("birthday-audio");
 const balloonsContainer = document.querySelector(".balloons"); // Changed selector
 
-const targetMonth = 3; // 0-indexed: January is 0, May is 4
-const targetDay = 25;
+const targetMonth = 4; // 0-indexed: January is 0, May is 4
+const targetDay = 6;
 
 function getNextBirthday() {
   const now = new Date();
