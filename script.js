@@ -14,14 +14,7 @@ const targetDay = 6;
 function getNextBirthday() {
   const now = new Date();
   const currentYear = now.getFullYear();
-  let birthdayThisYear = new Date(
-    currentYear,
-    targetMonth,
-    targetDay,
-    now.getHours(),
-    now.getMinutes(),
-    now.getSeconds()
-  );
+  let birthdayThisYear = new Date(currentYear, targetMonth, targetDay);
 
   return birthdayThisYear;
 }
@@ -47,6 +40,7 @@ function updateCountdown() {
   daysEl.textContent = d;
   hoursEl.textContent = h.toString().padStart(2, "0");
   minutesEl.textContent = m.toString().padStart(2, "0");
+  secondsEl.textContent = s.toString().padStart(2, "0");
 }
 
 function showCelebration() {
